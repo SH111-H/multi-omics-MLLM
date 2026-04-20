@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Artificial Intelligence for Central Dogma-Centric Multi-Omics Survey Scaffold"
+message: "If you use this repository structure, please cite the source review and this repository snapshot."
+type: software
+authors:
+  - family-names: "Huang"
+    given-names: "Shihong"
+    email: "shihongh11@gmail.com"
+repository-code: "https://github.com/SH111-H/central-dogma-multiomics-ai-survey"
+license: "UNLICENSED"
