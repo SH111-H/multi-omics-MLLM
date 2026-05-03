@@ -109,3 +109,6 @@ central-dogma-multiomics-ai-survey/
 2. Add a timeline figure and comparison tables
 3. Add post-2024 updates beyond the source review
 4. Normalize naming, venues, and benchmark metadata
+
+## Contributor
+Lei Xin（Wuhan University，2835838600@qq.com）
