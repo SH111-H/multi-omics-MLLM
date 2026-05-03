@@ -112,7 +112,11 @@ central-dogma-multiomics-ai-survey/
 
 ## Contributor
 Lei Xin（Wuhan University，2835838600@qq.com）
+
 Zhenglun Kong（Havard University）
+
 Caiyun Huang（Hunan University）
+
 Sihong Huang（Nanjing Agricutural University）
+
 Hao Tang（Peking University）
