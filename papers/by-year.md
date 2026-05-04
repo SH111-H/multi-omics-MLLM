@@ -49,12 +49,23 @@ This is a chronological reading index for the repository. It is intentionally wi
 | 2024 | scFoundation | Large-scale single-cell transcriptomics model | [models/foundation-models.md](../models/foundation-models.md) |
 | 2024 | GeneCompass | Knowledge-informed cross-species cell model | [models/foundation-models.md](../models/foundation-models.md) |
 | 2025 | LucaOne | Unified nucleic-acid and protein language model | [models/foundation-models.md](../models/foundation-models.md) |
+| 2025 | Life-Code | Central dogma sequence unification for DNA/RNA/protein-style modeling | [models/foundation-models.md](../models/foundation-models.md) |
 | 2025 | Nucleotide Transformer | Human and multispecies DNA foundation models | [models/foundation-models.md](../models/foundation-models.md) |
 | 2025 | CellFM | 100M-cell human transcriptomic foundation model | [models/foundation-models.md](../models/foundation-models.md) |
+| 2025 | scKGBERT | Knowledge-enhanced single-cell transcriptomics foundation model | [models/foundation-models.md](../models/foundation-models.md) |
 | 2025 | Nicheformer | Spatial omics foundation model | [models/foundation-models.md](../models/foundation-models.md) |
 | 2025 | Novae | Spatial transcriptomics foundation model | [models/foundation-models.md](../models/foundation-models.md) |
 | 2025 | EpiAgent | Single-cell epigenomics foundation model | [models/foundation-models.md](../models/foundation-models.md) |
 | 2025 | scvi-hub | Reusable pretrained probabilistic single-cell models | [models/foundation-models.md](../models/foundation-models.md) |
+| 2025 | scMultiSim | Single-cell multi-omics and spatial simulation | [papers/generation.md](generation.md) |
+| 2025 | SIMO | Spatial integration of multi-omics single-cell data | [papers/fusion-and-integration.md](fusion-and-integration.md) |
+| 2025 | HALO | Hierarchical causal modeling for single-cell multi-omics | [papers/fusion-and-integration.md](fusion-and-integration.md) |
+| 2025 | scTFBridge | Gene regulation inference in single-cell multi-omics | [papers/fusion-and-integration.md](fusion-and-integration.md) |
+| 2025 | MultiVeloVAE | Multi-omic latent velocity modeling | [papers/fusion-and-integration.md](fusion-and-integration.md) |
+| 2025 | Multitask multimodal integration benchmark | Benchmarking 40 single-cell multimodal integration methods | [resources/datasets-and-benchmarks.md](../resources/datasets-and-benchmarks.md) |
+| 2025 | Biology-driven scFM benchmark | Evaluating single-cell foundation models against task-specific baselines | [models/foundation-models.md](../models/foundation-models.md) |
+| 2026 | Evo 2 | Genome-scale biomolecular foundation model | [models/foundation-models.md](../models/foundation-models.md) |
+| 2026 | scFM utility evaluation | Foundation-model utility benchmark for single-cell analysis | [papers/surveys.md](surveys.md) |
 
 ## How To Read This Timeline
 

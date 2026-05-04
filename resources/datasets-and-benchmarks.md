@@ -21,6 +21,7 @@ This page collects the benchmark directions emphasized in the source review and 
 | Protein sequence corpus | [UniRef100](https://www.uniprot.org/help/uniref) | Protein sequences | Protein-language pretraining, peptide/protein interaction prediction | Open | Common foundation-model source for protein-aware central-dogma work. |
 | Expression compendium | [ARCHS4](https://maayanlab.cloud/archs4/) | Human/mouse RNA-seq expression from GEO/SRA | Pretraining, expression imputation, retrieval | Open | Large processed expression compendium for model pretraining. |
 | Simulation | [SymSim](https://github.com/YosefLab/SymSim) | Synthetic single-cell expression | Controlled stress tests, sparsity/noise experiments | Open source | Helpful when evaluating robustness and missingness handling. |
+| Simulation | [scMultiSim](https://www.nature.com/articles/s41592-025-02651-0) | Synthetic single-cell multi-omics and spatial data | Integration, generation, perturbation, spatial benchmarks | Paper/resource | Newer simulator designed for multi-omics and spatial benchmark stress tests. |
 
 ## Benchmark Axes
 
@@ -41,6 +42,15 @@ This page collects the benchmark directions emphasized in the source review and 
 - Better downstream task suites for foundation models.
 - More public multi-organ and multimodal datasets.
 - Evaluation that distinguishes biological signal from batch, tissue, and platform shortcuts.
+
+## Recent Benchmark Papers
+
+| Paper | Focus | Link |
+| --- | --- | --- |
+| scMultiSim | Synthetic single-cell multi-omics and spatial benchmarking | [Nature Methods](https://www.nature.com/articles/s41592-025-02651-0) |
+| Multitask benchmarking of single-cell multimodal omics integration methods | Method comparison across 64 real and 22 simulated datasets | [Nature Methods](https://www.nature.com/articles/s41592-025-02856-3) |
+| Biology-driven insights into the power of single-cell foundation models | Benchmarking scFMs against task-specific baselines | [Genome Biology](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03781-6) |
+| Evaluating the Utilities of Foundation Models in Single-cell Data Analysis | Multi-task scFM utility evaluation | [Advanced Science](https://doi.org/10.1002/advs.202514490) |
 
 ## Representative Benchmark-Oriented Tools
 

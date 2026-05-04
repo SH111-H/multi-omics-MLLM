@@ -1,8 +1,8 @@
-# Foundation Models
+# 🤖 Foundation Models
 
-The source review argues that foundation models are becoming the main route toward reusable multi-omics intelligence, especially when pretraining can encode interactions among DNA, RNA, proteins, cells, and phenotype.
+The source review argues that foundation models are becoming the main route toward reusable AI/MLLM intelligence for multi-omics, especially when pretraining can encode interactions among DNA, RNA, proteins, cells, and phenotype.
 
-## Core idea
+## Core Idea
 
 - Pretrain on large-scale biological sequences or cell atlases with self-supervision.
 - Learn transferable sequence, gene, cell, or molecular-interaction representations before task-specific fine-tuning.
@@ -33,6 +33,7 @@ The source review argues that foundation models are becoming the main route towa
 | GeneCompass | Knowledge-informed cross-species cell model | [Cell Research](https://www.nature.com/articles/s41422-024-01034-y) | [GitHub](https://github.com/xCompass-AI/GeneCompass) | 2024 | Integrates human/mouse single-cell data with prior knowledge such as GRNs and promoter information. |
 | UCE | Universal cell embeddings | [bioRxiv](https://doi.org/10.1101/2023.11.28.568918) | [GitHub](https://github.com/snap-stanford/UCE) | 2023 | Cross-species self-supervised cell embedding model. |
 | CellFM | 100M-cell human transcriptomic foundation model | [Nature Communications](https://www.nature.com/articles/s41467-025-59926-5) | [GitHub](https://github.com/biomed-AI/CellFM) | 2025 | 800M parameters, trained on 100M human cells; evaluates annotation, perturbation, and gene function tasks. |
+| scKGBERT | Knowledge-enhanced single-cell transcriptomics | [Genome Biology](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03862-6) | N/A | 2025 | Integrates 41M scRNA-seq profiles and protein-protein interaction priors with Gaussian attention. |
 | Nicheformer | Single-cell and spatial omics | [Nature Methods](https://www.nature.com/articles/s41592-025-02814-z) | [GitHub](https://github.com/theislab/nicheformer) | 2025 | SpatialCorpus-110M; brings spatial context into foundation-scale cell representations. |
 | Novae | Spatial transcriptomics | [Nature Methods](https://www.nature.com/articles/s41592-025-02899-6) | [GitHub](https://github.com/MICS-Lab/novae) | 2025 | Graph-based spatial foundation model trained on nearly 30M cells across 18 tissues. |
 | EpiAgent | Single-cell epigenomics | [Nature Methods](https://www.nature.com/articles/s41592-025-02822-z) | N/A | 2025 | Extends foundation-model framing to scATAC-seq and epigenomic tasks. |
@@ -43,7 +44,10 @@ The source review argues that foundation models are becoming the main route towa
 | Topic | Link | Year | Why it matters |
 | --- | --- | --- | --- |
 | Single-cell foundation-model guidance | [Nature Reviews Molecular Cell Biology](https://www.nature.com/articles/s41580-024-00756-6) | 2024 | Short comment on progress, limitations, and best practices. |
-| Single-cell foundation-model review | [Experimental & Molecular Medicine](https://doi.org/10.1038/s12276-025-01547-5) | 2025 | Broad review of scFMs and downstream single-cell use cases. |
+| Single-cell foundation-model review | [Single-cell foundation models: bringing artificial intelligence into cell biology](https://www.nature.com/articles/s12276-025-01547-5) | 2025 | High-level review of AI/MLLM-style scFMs and their limits. |
+| Biology-driven benchmark study | [Biology-driven insights into the power of single-cell foundation models](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03781-6) | 2025 | Benchmarks six scFMs against baselines across gene-level and cell-level tasks. |
+| Single-cell epigenomic briefing | [Deciphering single-cell epigenomic language with a foundation model](https://www.nature.com/articles/s41592-025-02851-8) | 2025 | Highlights EpiAgent and the move toward epigenomic foundation models. |
+| Benchmarking integration methods | [Multitask benchmarking of single-cell multimodal omics integration methods](https://www.nature.com/articles/s41592-025-02856-3) | 2025 | Compares 40 multimodal integration methods across 64 real and 22 simulated datasets. |
 | Zero-shot single-cell FM evaluation | [bioRxiv](https://doi.org/10.1101/2023.09.08.555192) / [Nature Methods highlight](https://www.nature.com/articles/s41592-025-02735-x) | 2023/2025 | Important cautionary work: foundation-model embeddings do not automatically beat simpler baselines. |
 | Genomic language-model guide | [Molecular Systems Biology](https://doi.org/10.1038/s44320-025-00184-4) | 2026 | Recent field guide for pretrained DNA/RNA language models. |
 

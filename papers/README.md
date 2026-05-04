@@ -1,8 +1,8 @@
-# Papers
+# 📚 Papers
 
-This folder is the living bibliography for the repository. It starts from the source review and then expands outward to adjacent, newer, and methodologically important papers.
+This folder is the living AI/MLLM bibliography for the repository. It starts from the source review and then expands outward to adjacent, newer, and methodologically important papers.
 
-## Index
+## 🗂 Index
 
 | Page | What it covers |
 | --- | --- |
@@ -14,15 +14,15 @@ This folder is the living bibliography for the repository. It starts from the so
 | [Fusion and integration](fusion-and-integration.md) | Alignment, shared latent spaces, graph fusion, and cross-modal embedding |
 | [Surveys](surveys.md) | Review papers and field maps for faster orientation |
 
-## Curation rules
+## 🧭 Curation Rules
 
 - Put the paper title or method name on a link.
 - Prefer primary sources first, then official preprints, then publisher pages.
 - Add the dataset, venue, year, and notes whenever they improve searchability.
 - Cross-list methods that naturally belong to more than one bucket instead of forcing a single label.
-- Keep adding newer papers as the field moves.
+- Keep adding newer AI/MLLM papers as the field moves.
 
-## Reading path
+## 📖 Reading Path
 
 1. Start with [Surveys](surveys.md) for context.
 2. Scan [By year](by-year.md) to understand how the field evolved.

@@ -21,6 +21,10 @@ This page tracks methods whose main contribution is cross-omics alignment, fusio
 | LASSO-MOGAT | Feature selection + graph attention | mRNA + miRNA + DNA methylation | [arXiv](https://arxiv.org/abs/2408.17384) | N/A | 2024 | Combines sparse feature selection with graph attention. |
 | HeteroGATomics | Heterogeneous graph attention | Cancer binary and multiclass tasks | [arXiv](https://arxiv.org/abs/2408.02845) | N/A | 2024 | Explicitly represents heterogeneous omics entities before downstream prediction. |
 | scCross | VAE/GAN/MNN cross-modal model | Single-cell multi-omics | [Genome Biology](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-024-03338-z) | N/A | 2024 | Integrates, generates, simulates, and perturbs across modalities. |
+| SIMO | Spatial multi-omics integration | Spatial multi-omics single-cell data | [Nature Communications](https://www.nature.com/articles/s41467-025-56523-4) | N/A | 2025 | Spatial alignment of multi-omics single-cell data. |
+| HALO | Hierarchical causal modeling | Coupled and decoupled single-cell multi-omics | [Nature Communications](https://www.nature.com/articles/s41467-025-63921-1) | N/A | 2025 | Models causal dependence across modalities and cell states. |
+| scTFBridge | Gene regulation inference | Single-cell multi-omics gene regulation | [Nature Communications](https://www.nature.com/articles/s41467-025-64227-y) | N/A | 2025 | Bridges TF motifs and downstream regulatory effects. |
+| MultiVeloVAE | Latent dynamic modeling | Multi-omic velocity / RNA-accessibility coupling | [Nature Communications](https://www.nature.com/articles/s41467-025-66287-6) | N/A | 2025 | Extends velocity-style modeling into joint multi-omic dynamics. |
 
 ## Alignment Patterns
 
@@ -31,3 +35,4 @@ This page tracks methods whose main contribution is cross-omics alignment, fusio
 | Biological graph prior | Gene regulatory, pathway, or sample similarity graphs | [GLUE](https://www.nature.com/articles/s41587-022-01284-4), [MOGONET](https://www.nature.com/articles/s41467-021-23774-w) |
 | Attention fusion | Learned modality weighting and heterogeneous feature interaction | [MOGAT](https://www.mdpi.com/1422-0067/25/5/2788), [HeteroGATomics](https://arxiv.org/abs/2408.02845) |
 | Cross-modal generation | Predict missing modalities or simulate cell states | [scCross](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-024-03338-z) |
+| Spatial and causal alignment | Preserve tissue structure and modality-dependent causality | [SIMO](https://www.nature.com/articles/s41467-025-56523-4), [HALO](https://www.nature.com/articles/s41467-025-63921-1), [scTFBridge](https://www.nature.com/articles/s41467-025-64227-y), [MultiVeloVAE](https://www.nature.com/articles/s41467-025-66287-6) |
