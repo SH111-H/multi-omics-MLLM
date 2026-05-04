@@ -7,14 +7,15 @@
 
 A living survey of AI methods for central dogma-centric multi-omics: DNA, RNA, protein, cells, phenotype, and the models that connect them.
 
-![Central dogma multi-omics AI map](assets/central-dogma-multiomics-map.svg)
+![Central dogma multi-omics AI cover](assets/central-dogma-multiomics-cover.png)
 
 This repository is organized around the review [Artificial Intelligence for Central Dogma-Centric Multi-Omics: Challenges and Breakthroughs](https://arxiv.org/abs/2412.12668), then expanded with related and newer work. It follows an awesome-list style so readers can quickly find papers, models, code, datasets, and benchmark directions.
 
 ## Contents
 
+- [News](#news)
 - [Why This Repository](#why-this-repository)
-- [Paper Taxonomy](#paper-taxonomy)
+- [Paper Collection](#paper-collection)
 - [Foundation Models](#foundation-models)
 - [Datasets and Benchmarks](#datasets-and-benchmarks)
 - [Challenges](#challenges)
@@ -22,6 +23,12 @@ This repository is organized around the review [Artificial Intelligence for Cent
 - [Repository Map](#repository-map)
 - [Contributing](#contributing)
 - [Citation](#citation)
+
+## News
+
+- 2026-05-04: Reworked the repository into an awesome-style survey with a polished README cover image.
+- 2026-05-04: Added task pages, a fusion/integration page, a survey page, and a year-organized paper index.
+- 2026-05-04: Expanded foundation models, datasets, benchmarks, and reproducibility checklists.
 
 ## Why This Repository
 
@@ -33,10 +40,13 @@ DNA / genome -> RNA / transcriptome -> protein / proteome -> phenotype
 
 That framing makes it easier to ask whether a model merely concatenates modalities or actually learns biologically meaningful cross-layer relationships.
 
-## Paper Taxonomy
+## Paper Collection
+
+The paper list is organized in two ways: by task for method lookup, and by year for survey-style reading.
 
 | Category | What it covers | Entry |
 | --- | --- | --- |
+| Year index | Chronological list from classical integration to recent foundation models | [papers/by-year.md](papers/by-year.md) |
 | Classification | Cancer subtype, disease state, cell type, and phenotype classification | [papers/classification.md](papers/classification.md) |
 | Regression | Drug response, expression prediction, binding energy, and survival-risk modeling | [papers/regression.md](papers/regression.md) |
 | Generation | Synthetic omics, cross-modal generation, imputation, simulation, and histology translation | [papers/generation.md](papers/generation.md) |
@@ -70,10 +80,11 @@ The review repeatedly highlights data sparsity, missing modalities, batch effect
 
 1. Read the source review: [arXiv:2412.12668](https://arxiv.org/abs/2412.12668).
 2. Use [papers/surveys.md](papers/surveys.md) to understand the broader field.
-3. Read [papers/fusion-and-integration.md](papers/fusion-and-integration.md) for the main model-design backbone.
-4. Drill into task pages: [classification](papers/classification.md), [regression](papers/regression.md), [generation](papers/generation.md), and [clustering](papers/clustering.md).
-5. Check [models/foundation-models.md](models/foundation-models.md) for newer central-dogma and single-cell foundation models.
-6. Use [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) before reproducing or comparing methods.
+3. Scan [papers/by-year.md](papers/by-year.md) for the timeline of methods.
+4. Read [papers/fusion-and-integration.md](papers/fusion-and-integration.md) for the main model-design backbone.
+5. Drill into task pages: [classification](papers/classification.md), [regression](papers/regression.md), [generation](papers/generation.md), and [clustering](papers/clustering.md).
+6. Check [models/foundation-models.md](models/foundation-models.md) for newer central-dogma and single-cell foundation models.
+7. Use [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) before reproducing or comparing methods.
 
 ## Repository Map
 
@@ -84,9 +95,10 @@ awesome-central-dogma-multiomics-ai/
 +-- CITATION.cff
 +-- LICENSE
 +-- assets/
-|   `-- central-dogma-multiomics-map.svg
+|   `-- central-dogma-multiomics-cover.png
 +-- papers/
 |   +-- README.md
+|   +-- by-year.md
 |   +-- classification.md
 |   +-- regression.md
 |   +-- generation.md
@@ -127,11 +139,3 @@ If this repository helps your work, please cite the source review:
   url     = {https://arxiv.org/abs/2412.12668}
 }
 ```
-
-## Maintainers
-
-- Lei Xin, Wuhan University, 2835838600@qq.com
-- Zhenglun Kong, Harvard University
-- Caiyun Huang, Hunan University
-- Shihong Huang, Nanjing Agricultural University
-- Hao Tang, Peking University

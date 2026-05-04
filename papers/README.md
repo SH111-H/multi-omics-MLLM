@@ -6,6 +6,7 @@ This folder is the living bibliography for the repository. It starts from the so
 
 | Page | What it covers |
 | --- | --- |
+| [By year](by-year.md) | Chronological paper index for survey-style reading |
 | [Classification](classification.md) | Cancer subtype, disease state, and phenotype classification |
 | [Regression](regression.md) | Drug response, expression prediction, and continuous phenotype modeling |
 | [Generation](generation.md) | Synthetic omics generation, cross-modal translation, and simulation |
@@ -24,6 +25,7 @@ This folder is the living bibliography for the repository. It starts from the so
 ## Reading path
 
 1. Start with [Surveys](surveys.md) for context.
-2. Move to [Fusion and integration](fusion-and-integration.md) for the model family backbone.
-3. Use the task pages to drill into classification, regression, generation, and clustering.
+2. Scan [By year](by-year.md) to understand how the field evolved.
+3. Move to [Fusion and integration](fusion-and-integration.md) for the model family backbone.
+4. Use the task pages to drill into classification, regression, generation, and clustering.
 

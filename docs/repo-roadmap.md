@@ -7,7 +7,7 @@ This repository is moving from a scaffold into an awesome-style living survey fo
 | Area | Status | Notes |
 | --- | --- | --- |
 | Top-level README | In progress | Awesome-list structure, visual overview, source-paper citation, and fast navigation. |
-| Paper taxonomy | Expanded | Classification, regression, generation, clustering, fusion, and surveys. |
+| Paper taxonomy | Expanded | Classification, regression, generation, clustering, fusion, surveys, and by-year browsing. |
 | Foundation models | Expanded | Split into cross-omics sequence models and single-cell/spatial models. |
 | Datasets and benchmarks | Expanded | Added reusable portals, benchmark axes, and reproducibility checklist. |
 | Contribution workflow | Added | `CONTRIBUTING.md` gives entry format and link rules. |
