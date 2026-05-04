@@ -1,0 +1,67 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Central Dogma Multi-Omics AI Map</title>
+  <desc id="desc">A compact overview of DNA, RNA, protein, phenotype, and multi-omics AI tasks.</desc>
+  <rect width="1600" height="520" rx="24" fill="#F7FAFC"/>
+  <rect x="32" y="32" width="1536" height="456" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" fill="#0F172A">
+    <text x="72" y="92" font-size="30" font-weight="700">Central Dogma-Centric Multi-Omics AI</text>
+    <text x="72" y="126" font-size="17" fill="#475569">DNA, RNA, protein, phenotype, and the models that connect them</text>
+  </g>
+
+  <g>
+    <rect x="92" y="176" width="210" height="116" rx="16" fill="#DBEAFE" stroke="#60A5FA" stroke-width="2"/>
+    <text x="130" y="223" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#1D4ED8">DNA</text>
+    <text x="130" y="254" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#1E3A8A">Genomics</text>
+
+    <rect x="374" y="176" width="210" height="116" rx="16" fill="#FFEDD5" stroke="#FB923C" stroke-width="2"/>
+    <text x="412" y="223" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#C2410C">RNA</text>
+    <text x="412" y="254" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#7C2D12">Transcriptomics</text>
+
+    <rect x="656" y="176" width="210" height="116" rx="16" fill="#DCFCE7" stroke="#34D399" stroke-width="2"/>
+    <text x="694" y="223" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#047857">Protein</text>
+    <text x="694" y="254" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#065F46">Proteomics</text>
+
+    <rect x="938" y="176" width="210" height="116" rx="16" fill="#EDE9FE" stroke="#A78BFA" stroke-width="2"/>
+    <text x="976" y="223" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#6D28D9">Phenotype</text>
+    <text x="976" y="254" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#4C1D95">Disease, survival, cells</text>
+  </g>
+
+  <g stroke="#0F172A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M302 234H366"/>
+    <path d="M584 234H648"/>
+    <path d="M866 234H930"/>
+    <path d="M1148 234H1226"/>
+    <path d="M1226 234L1206 224"/>
+    <path d="M1226 234L1206 244"/>
+    <path d="M366 234L346 224"/>
+    <path d="M366 234L346 244"/>
+    <path d="M648 234L628 224"/>
+    <path d="M648 234L628 244"/>
+    <path d="M930 234L910 224"/>
+    <path d="M930 234L910 244"/>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" fill="#0F172A">
+    <text x="112" y="338" font-size="18" font-weight="700">Core tasks</text>
+    <text x="112" y="366" font-size="16" fill="#334155">Classification</text>
+    <text x="250" y="366" font-size="16" fill="#334155">Regression</text>
+    <text x="388" y="366" font-size="16" fill="#334155">Generation</text>
+    <text x="526" y="366" font-size="16" fill="#334155">Clustering</text>
+    <text x="664" y="366" font-size="16" fill="#334155">Fusion</text>
+    <text x="766" y="366" font-size="16" fill="#334155">Foundation models</text>
+    <text x="956" y="366" font-size="16" fill="#334155">Datasets</text>
+    <text x="1084" y="366" font-size="16" fill="#334155">Benchmarks</text>
+  </g>
+
+  <g>
+    <rect x="1184" y="96" width="268" height="286" rx="18" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="1216" y="140" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#0F172A">Model families</text>
+    <text x="1216" y="176" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#334155">Linear projection</text>
+    <text x="1216" y="206" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#334155">MLP and autoencoder</text>
+    <text x="1216" y="236" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#334155">GNN and graph attention</text>
+    <text x="1216" y="266" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#334155">Transformer and cross-attention</text>
+    <text x="1216" y="296" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#334155">Diffusion and GAN</text>
+    <text x="1216" y="326" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#334155">Foundation-scale pretraining</text>
+  </g>
+</svg>

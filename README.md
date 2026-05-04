@@ -1,82 +1,98 @@
-# Artificial Intelligence for Central Dogma-Centric Multi-Omics
+# Awesome Central Dogma Multi-Omics AI
 
-A review-style GitHub scaffold built from the paper *Artificial Intelligence for Central Dogma-Centric Multi-Omics: Challenges and Breakthroughs* (arXiv:2412.12668, Dec 17, 2024).
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![arXiv](https://img.shields.io/badge/arXiv-2412.12668-b31b1b.svg)](https://arxiv.org/abs/2412.12668)
+[![License: CC0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg)](LICENSE)
+[![Papers](https://img.shields.io/badge/papers-curated-blue.svg)](papers/)
 
-This repository is a first-pass prototype. The current content is organized from the source paper only, without a full external literature expansion yet.
+A living survey of AI methods for central dogma-centric multi-omics: DNA, RNA, protein, cells, phenotype, and the models that connect them.
 
-## Scope
+![Central dogma multi-omics AI map](assets/central-dogma-multiomics-map.svg)
 
-This repo tracks AI methods for central dogma-centric multi-omics with five main threads:
+This repository is organized around the review [Artificial Intelligence for Central Dogma-Centric Multi-Omics: Challenges and Breakthroughs](https://arxiv.org/abs/2412.12668), then expanded with related and newer work. It follows an awesome-list style so readers can quickly find papers, models, code, datasets, and benchmark directions.
 
-1. Core problems in multi-omics data analysis
-2. Cross-modal alignment and fusion strategies
-3. Task-oriented method landscape
-4. Foundation models for multi-omics
-5. Open challenges, benchmarks, and outlook
+## Contents
 
-## Taxonomy
+- [Why This Repository](#why-this-repository)
+- [Paper Taxonomy](#paper-taxonomy)
+- [Foundation Models](#foundation-models)
+- [Datasets and Benchmarks](#datasets-and-benchmarks)
+- [Challenges](#challenges)
+- [Reading Path](#reading-path)
+- [Repository Map](#repository-map)
+- [Contributing](#contributing)
+- [Citation](#citation)
 
-### 1. Core issues in multi-omics
+## Why This Repository
 
-- High dimensionality and strong noise
-- Cross-platform heterogeneity and batch effects
-- Sparse observations and missingness
-- Weak alignment across DNA, RNA, protein, and phenotype layers
-- Limited interpretability in downstream disease models
+Most multi-omics lists group methods by assay or disease. This repository keeps the central dogma view explicit:
 
-More notes: [resources/challenges.md](resources/challenges.md)
+```text
+DNA / genome -> RNA / transcriptome -> protein / proteome -> phenotype
+```
 
-### 2. Alignment strategies
+That framing makes it easier to ask whether a model merely concatenates modalities or actually learns biologically meaningful cross-layer relationships.
 
-- Linear projector
-- Multi-layer perceptron
-- Cross-attention
-- Q-Former style query compression
+## Paper Taxonomy
 
-More notes: [docs/repo-roadmap.md](docs/repo-roadmap.md)
-
-### 3. Task landscape
-
-| Task family | Representative methods | Entry |
+| Category | What it covers | Entry |
 | --- | --- | --- |
-| Classification | DRPBind, ConvGNN, LASSO-MOGAT, SMA, SeNMo | [papers/classification.md](papers/classification.md) |
-| Regression | MOMA, Wang et al. DNN, OmniBioTE | [papers/regression.md](papers/regression.md) |
-| Generation | scAEGAN, OmicsGAN, MichiGAN, siVAE, Precious2GPT | [papers/generation.md](papers/generation.md) |
-| Clustering | PCA-Plus, CLCluster, scMDC, GRMEC-SC | [papers/clustering.md](papers/clustering.md) |
+| Classification | Cancer subtype, disease state, cell type, and phenotype classification | [papers/classification.md](papers/classification.md) |
+| Regression | Drug response, expression prediction, binding energy, and survival-risk modeling | [papers/regression.md](papers/regression.md) |
+| Generation | Synthetic omics, cross-modal generation, imputation, simulation, and histology translation | [papers/generation.md](papers/generation.md) |
+| Clustering | Patient grouping, subtype discovery, cell heterogeneity, and dimensionality reduction | [papers/clustering.md](papers/clustering.md) |
+| Fusion and integration | Alignment, shared latent spaces, graph fusion, and cross-modal embedding | [papers/fusion-and-integration.md](papers/fusion-and-integration.md) |
+| Surveys | Review papers and high-level maps of the field | [papers/surveys.md](papers/surveys.md) |
 
-### 4. Foundation models
+## Foundation Models
 
-Representative models highlighted in the source review:
+The foundation-model page is split into cross-omics sequence models and single-cell/spatial models.
 
-- Evo
-- scGPT
-- LucaOne
-- CD-GPT
-- scFoundation
+| Thread | Representative models | Entry |
+| --- | --- | --- |
+| Cross-omics and central-dogma sequence models | Evo, Evo 2, LucaOne, CD-GPT, Life-Code, OmniBioTE, DNABERT-2, HyenaDNA, Caduceus | [models/foundation-models.md](models/foundation-models.md) |
+| Single-cell and spatial foundation models | Geneformer, scGPT, scFoundation, GeneCompass, UCE, CellFM, Nicheformer, Novae, EpiAgent, scvi-hub | [models/foundation-models.md](models/foundation-models.md) |
 
-More notes: [models/foundation-models.md](models/foundation-models.md)
+## Datasets and Benchmarks
 
-### 5. Outlook
+| Resource type | Examples | Entry |
+| --- | --- | --- |
+| Cancer multi-omics | TCGA/GDC, CPTAC/PDC, CCLE/DepMap, GDSC | [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) |
+| Single-cell and spatial omics | Human Cell Atlas, CZ CELLxGENE Census, 10x Multiome, HuBMAP | [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) |
+| Sequence and expression corpora | GenBank, UniRef100, ARCHS4, GTEx, LINCS L1000 | [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) |
+| Evaluation checklists | Modality coverage, pairing, split design, batch effects, biological validation | [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) |
 
-- Cross-species evaluation systems
-- Interpretable fusion guided by biological rules
-- Long-sequence modeling
-- Multi-organ datasets
-- Biological migration and immune applications
+## Challenges
 
-More notes: [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md)
+The review repeatedly highlights data sparsity, missing modalities, batch effects, weak interpretability, long-sequence cost, privacy, and benchmark fragmentation. See [resources/challenges.md](resources/challenges.md) for a paper-review checklist and open problems worth tracking.
+
+## Reading Path
+
+1. Read the source review: [arXiv:2412.12668](https://arxiv.org/abs/2412.12668).
+2. Use [papers/surveys.md](papers/surveys.md) to understand the broader field.
+3. Read [papers/fusion-and-integration.md](papers/fusion-and-integration.md) for the main model-design backbone.
+4. Drill into task pages: [classification](papers/classification.md), [regression](papers/regression.md), [generation](papers/generation.md), and [clustering](papers/clustering.md).
+5. Check [models/foundation-models.md](models/foundation-models.md) for newer central-dogma and single-cell foundation models.
+6. Use [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) before reproducing or comparing methods.
 
 ## Repository Map
 
 ```text
-central-dogma-multiomics-ai-survey/
+awesome-central-dogma-multiomics-ai/
 +-- README.md
++-- CONTRIBUTING.md
++-- CITATION.cff
++-- LICENSE
++-- assets/
+|   `-- central-dogma-multiomics-map.svg
 +-- papers/
 |   +-- README.md
 |   +-- classification.md
 |   +-- regression.md
 |   +-- generation.md
-|   `-- clustering.md
+|   +-- clustering.md
+|   +-- fusion-and-integration.md
+|   `-- surveys.md
 +-- models/
 |   `-- foundation-models.md
 +-- resources/
@@ -86,37 +102,36 @@ central-dogma-multiomics-ai-survey/
     `-- repo-roadmap.md
 ```
 
-## Source Paper
+## Contributing
+
+Contributions are welcome. Please see [CONTRIBUTING.md](CONTRIBUTING.md) for paper-entry format, preferred links, and style rules.
+
+Good additions include:
+
+- New papers with primary links.
+- Official code or checkpoint links.
+- Dataset portals and benchmark metadata.
+- Corrections to venue, year, modality, task, or method-family labels.
+- Reproducible evaluation protocols.
+
+## Citation
+
+If this repository helps your work, please cite the source review:
 
 ```bibtex
 @article{xin2024ai,
   title   = {Artificial Intelligence for Central Dogma-Centric Multi-Omics: Challenges and Breakthroughs},
   author  = {Lei Xin and Caiyun Huang and Hao Li and Shihong Huang and others},
   journal = {arXiv preprint arXiv:2412.12668},
-  year    = {2024}
+  year    = {2024},
+  url     = {https://arxiv.org/abs/2412.12668}
 }
 ```
 
-## Current Status
+## Maintainers
 
-- Built from the provided PDF only
-- Includes a first-pass taxonomy and representative method list
-- Suitable as a repository skeleton before full literature expansion
-
-## Next Build Steps
-
-1. Expand each category into a complete paper table with links, code, and datasets
-2. Add a timeline figure and comparison tables
-3. Add post-2024 updates beyond the source review
-4. Normalize naming, venues, and benchmark metadata
-
-## Contributor
-Lei Xin（Wuhan University，2835838600@qq.com）
-
-Zhenglun Kong（Havard University）
-
-Caiyun Huang（Hunan University）
-
-Sihong Huang（Nanjing Agricutural University）
-
-Hao Tang（Peking University）
+- Lei Xin, Wuhan University, 2835838600@qq.com
+- Zhenglun Kong, Harvard University
+- Caiyun Huang, Hunan University
+- Shihong Huang, Nanjing Agricultural University
+- Hao Tang, Peking University
