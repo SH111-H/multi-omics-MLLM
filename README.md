@@ -13,7 +13,6 @@ This repository is organized around the review [Artificial Intelligence for Cent
 
 ## Contents
 
-- [📢 News](#news)
 - [🧭 Why This Repository](#why-this-repository)
 - [🗂 Paper Collection](#paper-collection)
 - [✨ Recent Highlights](#recent-highlights)
@@ -24,13 +23,6 @@ This repository is organized around the review [Artificial Intelligence for Cent
 - [🧩 Repository Map](#repository-map)
 - [✍️ Contributing](#contributing)
 - [📚 Citation](#citation)
-
-## 📢 News
-
-- 2026-05-04: Reworked the repository into an awesome-style AI/MLLM survey with a polished README cover image.
-- 2026-05-04: Added task pages, a fusion/integration page, a survey page, and a year-organized paper index.
-- 2026-05-04: Expanded foundation models, datasets, benchmarks, and reproducibility checklists.
-- 2026-05-04: Added newer single-cell, spatial, and multi-omics papers from 2025-2026.
 
 ## 🧭 Why This Repository
 
