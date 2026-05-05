@@ -9,22 +9,23 @@ A living survey of AI/MLLM methods for central dogma-centric multi-omics: DNA, R
 
 ![Central dogma multi-omics AI cover](assets/central-dogma-multiomics-cover.png)
 
-This repository is organized around the review [Artificial Intelligence for Central Dogma-Centric Multi-Omics: Challenges and Breakthroughs](https://arxiv.org/abs/2412.12668), then expanded with related and newer AI/MLLM work. It follows an awesome-list style so readers can quickly find papers, models, code, datasets, and benchmark directions.
+This repository is organized around the review [Artificial Intelligence for Central Dogma-Centric Multi-Omics: Challenges and Breakthroughs](https://arxiv.org/abs/2412.12668), then expanded with related and newer AI/MLLM work. It follows an awesome-list structure so readers can quickly find papers, models, code, datasets, and benchmark directions.
 
 ## Contents
 
-- [🧭 Why This Repository](#why-this-repository)
-- [🗂 Paper Collection](#paper-collection)
-- [✨ Recent Highlights](#recent-highlights)
-- [🤖 Foundation Models](#foundation-models)
-- [🧪 Datasets and Benchmarks](#datasets-and-benchmarks)
-- [⚠️ Challenges](#challenges)
-- [🗺 Reading Path](#reading-path)
-- [🧩 Repository Map](#repository-map)
-- [✍️ Contributing](#contributing)
-- [📚 Citation](#citation)
+- [Why This Repository](#why-this-repository)
+- [Start Here](#start-here)
+- [Paper Collection](#paper-collection)
+- [Recent Highlights](#recent-highlights)
+- [Foundation Models](#foundation-models)
+- [Datasets and Benchmarks](#datasets-and-benchmarks)
+- [Challenges](#challenges)
+- [Reading Path](#reading-path)
+- [Repository Map](#repository-map)
+- [Contributing](#contributing)
+- [Citation](#citation)
 
-## 🧭 Why This Repository
+## Why This Repository
 
 Most multi-omics lists group methods by assay or disease. This repository keeps the central dogma view explicit and gives AI/MLLM methods the front seat:
 
@@ -34,7 +35,17 @@ DNA / genome -> RNA / transcriptome -> protein / proteome -> phenotype
 
 That framing makes it easier to ask whether an AI/MLLM system merely concatenates modalities or actually learns biologically meaningful cross-layer relationships.
 
-## 🗂 Paper Collection
+## Start Here
+
+If you are new to the repository, use this order:
+
+1. Read the source review: [arXiv:2412.12668](https://arxiv.org/abs/2412.12668).
+2. Open [papers/README.md](papers/README.md) for the literature index.
+3. Scan [papers/by-year.md](papers/by-year.md) for the historical timeline.
+4. Use [models/foundation-models.md](models/foundation-models.md) for reusable pretrained models.
+5. Use [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) before reproducing or comparing methods.
+
+## Paper Collection
 
 The paper list is organized in two ways: by task for method lookup, and by year for survey-style reading.
 
@@ -48,7 +59,7 @@ The paper list is organized in two ways: by task for method lookup, and by year 
 | Fusion and integration | Alignment, shared latent spaces, graph fusion, and cross-modal embedding | [papers/fusion-and-integration.md](papers/fusion-and-integration.md) |
 | Surveys | Review papers and high-level maps of the field | [papers/surveys.md](papers/surveys.md) |
 
-## ✨ Recent Highlights
+## Recent Highlights
 
 | Year | Paper | Why it matters |
 | --- | --- | --- |
@@ -63,7 +74,7 @@ The paper list is organized in two ways: by task for method lookup, and by year 
 | 2025 | [EpiAgent](https://www.nature.com/articles/s41592-025-02822-z) | Foundation model for single-cell epigenomics. |
 | 2026 | [Evo 2](https://www.nature.com/articles/s41586-026-10176-5) | Genome-scale biomolecular foundation model across all domains of life. |
 
-## 🤖 Foundation Models
+## Foundation Models
 
 The foundation-model page is split into cross-omics sequence models and single-cell/spatial AI models.
 
@@ -72,7 +83,7 @@ The foundation-model page is split into cross-omics sequence models and single-c
 | Cross-omics and central-dogma sequence models | Evo, Evo 2, LucaOne, CD-GPT, Life-Code, OmniBioTE, DNABERT-2, HyenaDNA, Caduceus | [models/foundation-models.md](models/foundation-models.md) |
 | Single-cell and spatial foundation models | Geneformer, scGPT, scFoundation, GeneCompass, UCE, CellFM, scKGBERT, Nicheformer, Novae, EpiAgent, scvi-hub | [models/foundation-models.md](models/foundation-models.md) |
 
-## 🧪 Datasets and Benchmarks
+## Datasets and Benchmarks
 
 | Resource type | Examples | Entry |
 | --- | --- | --- |
@@ -81,11 +92,11 @@ The foundation-model page is split into cross-omics sequence models and single-c
 | Sequence and expression corpora | GenBank, UniRef100, ARCHS4, GTEx, LINCS L1000 | [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) |
 | Evaluation checklists | Modality coverage, pairing, split design, batch effects, biological validation | [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) |
 
-## ⚠️ Challenges
+## Challenges
 
 The review repeatedly highlights data sparsity, missing modalities, batch effects, weak interpretability, long-sequence cost, privacy, and benchmark fragmentation. See [resources/challenges.md](resources/challenges.md) for a paper-review checklist and open problems worth tracking.
 
-## 🗺 Reading Path
+## Reading Path
 
 1. Read the source review: [arXiv:2412.12668](https://arxiv.org/abs/2412.12668).
 2. Use [papers/surveys.md](papers/surveys.md) to understand the broader field.
@@ -95,7 +106,7 @@ The review repeatedly highlights data sparsity, missing modalities, batch effect
 6. Check [models/foundation-models.md](models/foundation-models.md) for newer central-dogma and single-cell foundation models.
 7. Use [resources/datasets-and-benchmarks.md](resources/datasets-and-benchmarks.md) before reproducing or comparing methods.
 
-## 🧩 Repository Map
+## Repository Map
 
 ```text
 awesome-ai-mllm-for-central-dogma-multiomics/
@@ -115,15 +126,17 @@ awesome-ai-mllm-for-central-dogma-multiomics/
 |   +-- fusion-and-integration.md
 |   `-- surveys.md
 +-- models/
+|   +-- README.md
 |   `-- foundation-models.md
 +-- resources/
+|   +-- README.md
 |   +-- challenges.md
 |   `-- datasets-and-benchmarks.md
 `-- docs/
     `-- repo-roadmap.md
 ```
 
-## ✍️ Contributing
+## Contributing
 
 Contributions are welcome. Please see [CONTRIBUTING.md](CONTRIBUTING.md) for paper-entry format, preferred links, and style rules.
 
@@ -135,7 +148,7 @@ Good additions include:
 - Corrections to venue, year, modality, task, or method-family labels.
 - Reproducible evaluation protocols.
 
-## 📚 Citation
+## Citation
 
 If this repository helps your work, please cite the source review:
 
